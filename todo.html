@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="todo.css">
+    <script src="https://kit.fontawesome.com/c7f48f1945.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <div id="header_start">
+            <p><i class="fa-solid fa-clipboard-list" id="title_icon"></i></p>
+            <h1>Task List</h1>
+        </div>
+        <div id="datecontainer">
+            <p id="date"></p>
+        </div>
+        <div id="console">
+            <form id="task_form">
+                <input type="text" id="new_task" placeholder="What's your plan?">
+                <button type="submit" id="add_btn">Add</button>
+            </form>
+            <select name="filter" id="filter">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="not_completed">Not Completed</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h3>Your Tasks</h3>
+            
+            <ul id="task_list">
+                <!-- <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="demo" readonly>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="done"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>  -->
+            </ul>
+        </section>
+
+        <div align="center">
+            <button id="removeAll"><a id="remove_all">Remove All</a></button>
+        </div>
+
+    </main>
+    
+    <script src="todo.js"></script>
+</body>
+</html>

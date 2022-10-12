@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #b6e6ff;
+}
+
+header{
+    margin: 20px;
+    padding: 10px;
+}
+
+#header_start{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#console{
+    display: flex;
+}
+
+h1{
+    color: #2C3A47;
+    margin-left: 5px;
+}
+
+#title_icon{
+    font-size: 2.5rem;
+    color: #6c5ce7;
+    margin-right: 5px;
+}
+
+#datecontainer{
+    display: flex;
+    justify-content: center;
+}
+
+#date{
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #2C3A47;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 25vh;
+    border-left: 5px #6c5ce7 solid;
+    border-right: 5px #6c5ce7 solid
+}
+
+#task_form{
+    background-color: #2C3A47;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+#new_task{
+    width: 60vh;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 8px;
+    background-color: #2C3A47;
+    color: white;
+    border-left: 8px #6c5ce7 solid;
+}
+
+#add_btn{
+    width: 60;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #2C3A47;
+    color: white;
+}
+
+#add_btn:hover, button.edit:hover, button#removeAll:hover{
+    background-color: #6c5ce7;
+}
+
+#filter{
+    border: none;
+    border-radius: 5px;
+    background-color: #2C3A47;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+h3{
+    text-align: center;
+    color: #2C3A47;
+    margin-bottom: 10px;
+}
+
+#task_list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task{
+    display: flex;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content{
+    margin-right: 5px;
+}
+.text{
+    width: 80vh;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #2C3A47;
+    color: white;
+}
+.actions{
+    display: flex;
+}
+button.edit{
+    color: white;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #2C3A47;
+    cursor: pointer;
+}
+
+button.done, button.delete{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 30;
+    color: #2C3A47;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button.done:hover{
+    color: green;
+}
+button.delete:hover{
+    color: red;
+}
+.fa-circle-check, .fa-trash{
+    pointer-events: none;
+}
+
+button#removeAll{
+    width: 100;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #2C3A47;
+    color: white;
+}
+
+.completed{
+    /* text-decoration: line-through; */
+    opacity: 0.5;
+    transition: 0.8s;
+}
