@@ -81,11 +81,14 @@ function addTask(event){
 
     //Clear Input Value
     newTask.value = "";
+
     }
 }
 
 function editDoneDelete(event){
     const item = event.target;
+
+    //
 
     //Delete
     if(item.classList[0]==='delete'){
